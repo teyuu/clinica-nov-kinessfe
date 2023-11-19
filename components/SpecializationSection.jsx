@@ -37,8 +37,8 @@ const especialidades = [
 
 const SpecializationSection = () => {
   return (
-    <div className="h-screen flex flex-col gap-5">
-      <section className="lg:h-2/5  p-5 flex flex-col justify-evenly">
+    <div className="h-auto flex flex-col gap-5">
+      <section className="lg:h-96  p-5 flex flex-col justify-evenly">
         <div className="border-b-4">
           <h1 className="text-4xl ">Especialidades</h1>
         </div>
@@ -58,7 +58,7 @@ const SpecializationSection = () => {
         </div>
       </section>
 
-      <section className="lg:h-2/5 p-5 bg-[#319e5d] text-white text-justify lg:flex items-center">
+      <section className="lg:h-96 p-5 bg-[#319e5d] text-white text-justify lg:flex items-center">
         <div className=" flex flex-col justify-center items-center gap-14 lg:flex-row ">
           <p className="lg:w-[50%]">
             &quot;En nuestra clínica de rehabilitación y medicina integral, nos
