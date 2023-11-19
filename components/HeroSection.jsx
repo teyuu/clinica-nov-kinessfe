@@ -9,9 +9,9 @@ const HeroSection = () => {
 
   return (
     <div
-      className="bg-[url('https://i.ibb.co/kDLdmSz/landing.jpg')] bg-cover bg-center h-[550px] lg:h-[90%] w-full text-white"
+      className="bg-[url('https://i.ibb.co/kDLdmSz/landing.jpg')] bg-cover bg-center h-[550px] lg:h-[90%] w-full text-white "
     >
-      <div className="h-full flex flex-col justify-evenly items-center font-PlayfairDisplay">
+      <div className=" h-full flex flex-col justify-evenly items-center font-PlayfairDisplay">
 
         <div className=' flex flex-col w-[90%] justify-center text-center gap-5'>
           <h1 className={heroTextStyle.title}>
