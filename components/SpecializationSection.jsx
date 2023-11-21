@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import therapist from "../assets/masaje.png";
-import TOcupacional from "../assets/tocupacional.png";
+import TOcupacional from "../assets/to.png";
 import Divan from "../assets/divan.png";
-import Nutrition from "../assets/nutrition.png";
+import Nutrition from "../assets/nutricion.png";
 import Lotus from "../assets/lotus.png";
-import ConsultorioImg from "../assets/logo3.png";
+// import ConsultorioImg from "../assets/logo3.png";
 
 const especialidades = [
   {
@@ -37,31 +37,32 @@ const especialidades = [
 
 const SpecializationSection = () => {
   return (
-    <div className="h-auto flex flex-col gap-5">
-      <section className="lg:h-[30rem] px-16 p-5 flex flex-col justify-evenly">
+    <div className="h-auto flex flex-col">
+      <section className="xl:h-[30rem] text-white bg-[#81ab95] px-16 p-5 flex flex-col justify-evenly">
+        
         <div className="border-b-4">
-          <h1 className="text-4xl ">Especialidades</h1>
+          <h1 className="text-4xl ">ESPECIALIDADES</h1>
         </div>
 
-        <div className="flex flex-col flex-wrap lg:flex-row justify-between  md:basis-52 gap-4  text-white">
-          {especialidades.map((e) => {
-            return (
-              <div
-                key={e.alt}
-                className="rounded-xl bg-[#319e5d] lg:w-[15%] flex flex-col justify-center items-center "
-              >
-                <Image src={e.img} width={80} height={0} alt={e.alt} />
-                <p className="text-xl text-center">{e.nombre}</p>
+        <div className="flex flex-wrap lg:flex-row justify-between gap-4">
+          {especialidades.map((e) => (
+            <div key={e.alt} className="text-center space-y-8 border-b p-5">
+              <div className="bg-white rounded-3xl h-[12rem] w-48 flex items-center justify-center">
+                <Image src={e.img} width={100} alt={e.nombre} />
               </div>
-            );
-          })}
+              <p className="text-lg">{e.nombre}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section className="lg:h-96 p-5 bg-[#319e5d] text-white text-justify lg:flex items-center">
-        <div className=" flex flex-col justify-center items-center gap-14 lg:flex-row ">
-          <p className="lg:w-[50%]">
-            &quot;En nuestra clínica de rehabilitación y medicina integral, nos
+ <section className="lg:h-[30rem] p-5 bg-cover bg-center bg-white text-black">
+        <div className="flex flex-col justify-center items-center gap-14   py-12">
+          <p className="font-extrabold text-5xl ">
+            ¿QUÉ VAS A ENCONTRAR?
+          </p>
+          <p className="lg:w-[50%] text-lg text-justify">
+          &quot;En nuestra clínica de rehabilitación y medicina integral, nos
             enorgullecemos de ofrecer una gama completa de servicios
             especializados para atender todas las necesidades de nuestros
             pacientes. Nuestro equipo multidisciplinario está compuesto por
@@ -69,41 +70,13 @@ const SpecializationSection = () => {
             En conjunto, nuestro equipo trabaja unido con un objetivo común:
             brindar un cuidado integral y personalizado que promueva la
             recuperación, el bienestar y la mejora continua de la calidad de
-            vida de nuestros pacientes.&quot;
+            vida de nuestros pacientes&quot; 
           </p>
-          <Image
-  src={ConsultorioImg}
-  width={100}
-  alt=""
-  
-/>
         </div>
-      </section>
+      </section> 
     </div>
   );
 };
 
 export default SpecializationSection;
-
-{
-  /* <div className="flex items-center ">
-<p className="w-[50%] border-b-4 ">
-&quot;En nuestra clínica de rehabilitación y medicina integral, nos
-  enorgullecemos de ofrecer una gama completa de servicios
-  especializados para atender todas las necesidades de nuestros
-  pacientes. Nuestro equipo multidisciplinario está compuesto por
-  profesionales altamente capacitados en diversas áreas de la salud.
-   En conjunto,
-  nuestro equipo trabaja unido con un objetivo común: brindar un
-  cuidado integral y personalizado que promueva la recuperación, el
-  bienestar y la mejora continua de la calidad de vida de nuestros
-  pacientes.&quot;
-</p>
-<Image
-  src={ConsultorioImg}
-  width={100}
-  alt=""
-  
-/>
-</div> */
-}
+// bg-[#9BB0A5]

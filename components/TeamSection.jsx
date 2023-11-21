@@ -31,7 +31,7 @@ const equipo = [
 const TeamSection = () => {
   return (
     <div className="h-auto ">
-      <section className="lg:h-[30rem] h-full xl:px-16 flex flex-col justify-around  p-5">
+      <section className="lg:h-[30rem] h-full xl:px-16 flex flex-col justify-around  p-5]">
         <h1 className="text-4xl border-b-4 w-full uppercase">Equipo</h1>
 
         <div className="flex flex-col items-center md:flex-row  justify-between flex-wrap ">

@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection/>  
       <SpecializationSection/> 
-      <TeamSection/>
+      {/* <TeamSection/> */}
     </div>
   );
 }
