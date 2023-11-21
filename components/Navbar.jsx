@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed font-PlayfairDisplay flex justify-between items-center h-24  mx-auto px-4 text-white bg-[#81ab95] w-full z-10 transition duration-300 ${
+      className={`fixed font-PlayfairDisplay flex justify-between items-center h-24  mx-auto px-4 text-white bg-[#619b8a] w-full z-10 transition duration-300 ${
         scrolled ? "border-b border-white" : "border-b-0 border-transparent"
       }`}
     >

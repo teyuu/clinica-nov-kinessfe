@@ -38,7 +38,7 @@ const especialidades = [
 const SpecializationSection = () => {
   return (
     <div className="h-auto flex flex-col">
-      <section className="xl:h-[30rem] text-white bg-[#81ab95] px-16 p-5 flex flex-col justify-evenly">
+      <section className="xl:h-[30rem] text-white bg-[#619b8a] px-16 p-5 flex flex-col justify-evenly">
         
         <div className="border-b-4">
           <h1 className="text-4xl ">ESPECIALIDADES</h1>
