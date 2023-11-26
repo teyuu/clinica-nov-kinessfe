@@ -48,7 +48,7 @@ const SpecializationSection = () => {
         <div className="flex flex-col sm:flex-row flex-wrap items-center xl:justify-between">
           {especialidades.map((e) => (
             <div key={e.alt} className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center">
-              <div className="bg-white rounded-3xl w-48 h-[12rem] flex items-center justify-center border-4 border-[#C7FCEB]">
+              <div className="bg-white rounded-3xl w-48 h-[12rem] flex items-center justify-center border-4 ">
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
