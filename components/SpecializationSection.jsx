@@ -42,7 +42,7 @@ const SpecializationSection = () => {
       <section className="text-white bg-[#619b8a] h-fit space-y-5  px-16 py-10">
         
         <div className="p-5 ">
-          <h1 className="text-4xl text-center xl:text-start border-b-4 ">ESPECIALIDADES</h1>
+          <h1 className="text-2xl lg:text-4xl text-center xl:text-start border-b-4 ">ESPECIALIDADES</h1>
         </div>
 
         <div className="flex flex-col sm:flex-row flex-wrap items-center xl:justify-between">
