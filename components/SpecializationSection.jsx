@@ -48,7 +48,7 @@ const SpecializationSection = () => {
         <div className="flex flex-col sm:flex-row flex-wrap items-center xl:justify-between">
           {especialidades.map((e) => (
             <div key={e.alt} className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center">
-              <div className="bg-white rounded-3xl w-48 h-[12rem] flex items-center justify-center border-4 ">
+              <div className="bg-gray-100 rounded-3xl w-48 h-[12rem] flex items-center justify-center border-4 ">
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
@@ -57,7 +57,7 @@ const SpecializationSection = () => {
         </div>
       </section>
 
- <section className="h-fit space-y-5  px-16 py-10 bg-white text-black">
+ <section className="h-fit space-y-5  px-16 py-10 bg-gray-100 text-black">
         <div className="flex flex-col justify-center items-center gap-14   py-12">
           <p className="font-extrabold text-5xl text-center ">
             ¿QUÉ VAS A ENCONTRAR?
