@@ -50,13 +50,18 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden bg-gray-100 text-gray-600 md:flex justify-end px-5  items-center gap-10 ">
-        <p className="">
+        <p className="text-[0.9rem]">
           {" "}
           Av. Aristóbulo del Valle 7289, Santa Fe - Tel: (342) - 6260983
         </p>
-        <div className="text-2xl space-x-5">
+        <div className="text-xl space-x-5"><Link
+            href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F3426260983&e=AT3MCUCT-La4QQj-0Wkw6CIeMOYiToBmgoRa0Zi1UZzZw63w5FIdAGP28Kgf1RO4m_0dAKnIx4DxtnMxYumcKmiWLhLkcGZ_U1v2q3yK7-B5EVtE3q0VOCA"
+            target="_blank"
+          >
+            <i className="ri-whatsapp-line"></i>
+          </Link>
           <Link
-            href="https://www.instagram.com/clinicakinessfe_/?hl=es-la"
+            href="https://api.whatsapp.com/send/?phone=3426260983&text&type=phone_number&app_absent=0"
             target="_blank"
           >
             <i className="ri-instagram-line"></i>
@@ -67,12 +72,7 @@ const Navbar = () => {
           >
             <i className="ri-facebook-circle-line"></i>
           </Link>
-          <Link
-            href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F3426260983&e=AT3MCUCT-La4QQj-0Wkw6CIeMOYiToBmgoRa0Zi1UZzZw63w5FIdAGP28Kgf1RO4m_0dAKnIx4DxtnMxYumcKmiWLhLkcGZ_U1v2q3yK7-B5EVtE3q0VOCA"
-            target="_blank"
-          >
-            <i className="ri-whatsapp-line"></i>
-          </Link>
+          
         </div>
       </div>
 
@@ -81,14 +81,14 @@ const Navbar = () => {
           scrolled ? "border-b border-white" : "border-b-0 border-transparent"
         }`}
       >
+          <Link href="/">
         <div className="flex items-center gap-2">
           <Image src={logo} width={60} alt="logo" className="border " />
-          <Link href="/">
             <h1 className="hidden md:block w-auto text-3xl font-bold text-white  cursor-pointer">
               CLINICA KINESSFE
             </h1>
-          </Link>
         </div>
+          </Link>
 
         {/* Navigation for larger screens */}
         <ul className={`hidden lg:flex justify-between items-center `}>
@@ -100,7 +100,12 @@ const Navbar = () => {
               <Link href={e.link}>{e.itemName}</Link>
             </li>
           ))}
-          <button className="btn rounded-xl border p-4">PEDI TU TURNO</button>
+          <Link
+            href="https://api.whatsapp.com/send/?phone=3426260983&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <button className="btn rounded-xl border py-4 px-8 hover:bg-white hover:text-black transition-color duration-200">PEDI TU TURNO</button>
+          </Link>
         </ul>
 
         {/* Hamburger menu for smaller screens */}

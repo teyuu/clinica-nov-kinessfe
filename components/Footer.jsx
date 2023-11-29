@@ -14,7 +14,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="xl:h-80 min-w-[360px] flex items-center text-white bg-[#619b8a]">
+    <>
+    <div className="xl:h-72 min-w-[360px] flex flex-col justify-center items-center gap-3 text-white bg-[#619b8a]">
       <div className="container mx-auto py-8 px-5 flex flex-col xl:flex-row justify-center gap-8">
         <div className="flex items-center gap-4">
           <div className="h-16 w-16 border">
@@ -38,7 +39,12 @@ const Footer = () => {
           <p className="font-medium">Email: {clinicDetails.email}</p>
         </div>
       </div>
+      <div className="container mx-auto flex xl:justify-center px-5 xl:px-0 text-gray-700 ">
+      <i class="ri-copyright-line"></i>
+      <p > 2023 KINESSFE. ALL RIGHTS RESERVED</p>
     </div>
+      </div>
+    </>
   );
 };
 

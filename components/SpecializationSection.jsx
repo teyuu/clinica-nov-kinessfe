@@ -38,16 +38,19 @@ const especialidades = [
 const SpecializationSection = () => {
   return (
     <div className="h-auto w-full">
-       
       <section className="text-white bg-[#619b8a] h-fit space-y-5  px-16 py-10">
-        
         <div className="p-5 ">
-          <h1 className="text-2xl lg:text-4xl text-center xl:text-start border-b-4 ">ESPECIALIDADES</h1>
+          <h1 className="text-2xl lg:text-4xl text-center xl:text-start border-b-4 ">
+            ESPECIALIDADES
+          </h1>
         </div>
 
         <div className="flex flex-col sm:flex-row flex-wrap items-center xl:justify-between">
           {especialidades.map((e) => (
-            <div key={e.alt} className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center">
+            <div
+              key={e.alt}
+              className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center"
+            >
               <div className="transform hover:scale-110 transition ease-out duration-300 bg-gray-100 rounded-3xl w-48 h-[12rem] flex items-center justify-center border-4 ">
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
@@ -57,24 +60,21 @@ const SpecializationSection = () => {
         </div>
       </section>
 
- <section className="h-fit space-y-5  px-16 py-10 bg-gray-100 text-black">
+      <section className="h-fit space-y-5  px-16 py-10 bg-gray-100 text-black">
         <div className="flex flex-col justify-center items-center gap-14   py-12">
           <p className="font-extrabold text-5xl text-center ">
             ¿QUÉ VAS A ENCONTRAR?
           </p>
           <p className="lg:w-[50%] text-lg text-justify">
-          &quot;En nuestra clínica de rehabilitación y medicina integral, nos
-            enorgullecemos de ofrecer una gama completa de servicios
-            especializados para atender todas las necesidades de nuestros
-            pacientes. Nuestro equipo multidisciplinario está compuesto por
-            profesionales altamente capacitados en diversas áreas de la salud.
-            En conjunto, nuestro equipo trabaja unido con un objetivo común:
-            brindar un cuidado integral y personalizado que promueva la
-            recuperación, el bienestar y la mejora continua de la calidad de
-            vida de nuestros pacientes&quot; 
+            &quot;En nuestra clínica nos orgullecemos de ofrecer servicios
+            especializados en las distintas áreas de la salud de acuerdo a las
+            necesidades de nuestros pacientes. En conjunto, nuestro equipo
+            trabaja con un objetivo común: brindar un cuidado personalizado que
+            promueva la recuperación, el bienestar y la mejora continua de la
+            calidad de vida de las personas&quot;
           </p>
         </div>
-      </section> 
+      </section>
     </div>
   );
 };

@@ -8,8 +8,10 @@ const HeroSection = () => {
     subtitle: "md:text-2xl font-medium leading-tight uppercase",
   };
 
+ 
   return (
     <div
+      onLoad={'?'}
       className=" bg-[url('https://i.ibb.co/kDLdmSz/landing.jpg')] bg-cover bg-center h-[750px] lg:h-screen w-full text-white "
     >
       <div className=" h-full  flex flex-col justify-evenly items-center font-PlayfairDisplay">
@@ -22,7 +24,7 @@ const HeroSection = () => {
             Cuidado integral para una vida plena: Recupera tu vitalidad física, emocional y mental
           </h2>
         </div>
-        <Link href='https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F3426260983&e=AT0O6Ko5r8721M84UfyXd1jw8vor26jwuCvcCgNX4NT5CKoOOb0mUGanWESPDM9zoMt-F3AcL9VHJIJkiuU7qH7YgE69aVOBcT9VP3-KdOkVwtXUvmBYLUQ' target="_blank">
+        <Link href='https://api.whatsapp.com/send/?phone=3426260983&text&type=phone_number&app_absent=0' target="_blank">
         <button className='rounded bg-white text-black border-black  py-4 px-8 hover:bg-[#619b8a] hover:text-white transition-color duration-200 uppercase'>Pedi tu turno</button>
         </Link>
       </div>
