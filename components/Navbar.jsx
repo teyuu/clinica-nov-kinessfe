@@ -50,20 +50,32 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden bg-gray-100 text-gray-600 md:flex justify-end px-5  items-center gap-10 ">
-        <p className=""> Av. Aristóbulo del Valle 7289, Santa Fe - Tel: (342) - 6260983</p>
+        <p className="">
+          {" "}
+          Av. Aristóbulo del Valle 7289, Santa Fe - Tel: (342) - 6260983
+        </p>
         <div className="text-2xl space-x-5">
-          <Link href="https://www.instagram.com/clinicakinessfe_/?hl=es-la" target="_blank">
+          <Link
+            href="https://www.instagram.com/clinicakinessfe_/?hl=es-la"
+            target="_blank"
+          >
             <i className="ri-instagram-line"></i>
           </Link>
-          <Link href="https://www.facebook.com/profile.php?id=100083596687337" target="_blank">
+          <Link
+            href="https://www.facebook.com/profile.php?id=100083596687337"
+            target="_blank"
+          >
             <i className="ri-facebook-circle-line"></i>
           </Link>
-          <Link href="">
+          <Link
+            href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F3426260983&e=AT3MCUCT-La4QQj-0Wkw6CIeMOYiToBmgoRa0Zi1UZzZw63w5FIdAGP28Kgf1RO4m_0dAKnIx4DxtnMxYumcKmiWLhLkcGZ_U1v2q3yK7-B5EVtE3q0VOCA"
+            target="_blank"
+          >
             <i className="ri-whatsapp-line"></i>
           </Link>
         </div>
       </div>
-      
+
       <nav
         className={`min-w-[360px] font-PlayfairDisplay flex justify-between items-center h-24  mx-auto px-4 text-white bg-[#619b8a] w-full z-10 transition duration-300 ${
           scrolled ? "border-b border-white" : "border-b-0 border-transparent"
@@ -71,12 +83,11 @@ const Navbar = () => {
       >
         <div className="flex items-center gap-2">
           <Image src={logo} width={60} alt="logo" className="border " />
-          <Link href='/'>
-          <h1 className="hidden md:block w-auto text-3xl font-bold text-white  cursor-pointer">
-            CLINICA KINESSFE
-          </h1>
+          <Link href="/">
+            <h1 className="hidden md:block w-auto text-3xl font-bold text-white  cursor-pointer">
+              CLINICA KINESSFE
+            </h1>
           </Link>
-          
         </div>
 
         {/* Navigation for larger screens */}

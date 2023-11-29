@@ -23,7 +23,7 @@ const Contact = () => {
     <div className="bg-[#619b8a] text-white">
       <div className="container  lg:h-72 mx-auto py-5 flex flex-col lg:flex-row justify-between items-center gap-5">
         {contactDetails.map((detail, index) => (
-          <div key={index} className="flex w-full justify-center gap-5">
+          <div key={index} className="flex w-full justify-center gap-5 transform hover:scale-90 ease-out transition duration-200">
             <div className="rounded-full border-4 p-2 text-6xl">
               <i className={detail.icon}></i>
             </div>
