@@ -5,6 +5,7 @@ import TOcupacional from "../assets/to.png";
 import Divan from "../assets/divan.png";
 import Nutrition from "../assets/nutricion.png";
 import Lotus from "../assets/lotus.png";
+import Link from "next/link";
 // import ConsultorioImg from "../assets/logo3.png";
 
 const especialidades = [
@@ -45,33 +46,38 @@ const SpecializationSection = () => {
           </h1>
         </div>
 
+       
         <div className="flex flex-col sm:flex-row flex-wrap items-center xl:justify-between">
           {especialidades.map((e) => (
-            <div
+            <Link
               key={e.alt}
-              className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center"
+              className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center "
+              href='/especialidades'
             >
-              <div className="transform hover:scale-110 transition ease-out duration-300 bg-gray-100 rounded-3xl w-48 h-[12rem] flex items-center justify-center border-4 ">
+            
+              <div className="transform hover:scale-110 transition ease-out duration-300 bg-white hover:bg-opacity-90 text-[#619b8a] rounded-lg w-48 h-[12rem] flex items-center justify-center  ">
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
 
       <section className="h-fit space-y-5  px-16 py-10 bg-gray-100 text-black">
         <div className="flex flex-col justify-center items-center gap-14   py-12">
-          <p className="font-extrabold text-5xl text-center ">
-            ¿QUÉ VAS A ENCONTRAR?
-          </p>
+          <p className="font-extrabold text-5xl text-center ">NUESTRA VISIÓN</p>
           <p className="lg:w-[50%] text-lg text-justify">
-            &quot;En nuestra clínica nos orgullecemos de ofrecer servicios
-            especializados en las distintas áreas de la salud de acuerdo a las
-            necesidades de nuestros pacientes. En conjunto, nuestro equipo
-            trabaja con un objetivo común: brindar un cuidado personalizado que
-            promueva la recuperación, el bienestar y la mejora continua de la
-            calidad de vida de las personas&quot;
+            &quot;En Clínica Kinessfe, nuestro enfoque se basa en la
+            colaboración entre distintas disciplinas para ofrecer una atención
+            integral. Buscamos brindar un cuidado personalizado que promueva la
+            recuperación y el bienestar de quienes nos eligen, mejorando su
+            calidad de vida. Nos dedicamos a proporcionar servicios
+            especializados en diversas áreas de la salud, adaptados a las
+            necesidades individuales de cada paciente. Trabajamos juntos con un
+            objetivo común: asegurar una atención que impulse la recuperación,
+            el bienestar continuo y la mejora constante de la calidad de vida de
+            cada persona.&quot;
           </p>
         </div>
       </section>

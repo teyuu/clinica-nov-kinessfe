@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto flex xl:justify-center px-5 xl:px-0 text-gray-700 ">
-      <i class="ri-copyright-line"></i>
+      <i className="ri-copyright-line"></i>
       <p > 2023 KINESSFE. ALL RIGHTS RESERVED</p>
     </div>
       </div>
