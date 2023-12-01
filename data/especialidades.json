@@ -1,0 +1,37 @@
+[
+    {
+      "nombre": "Kinesiología y Fisiatría",
+      "img": "https://i.ibb.co/NjcZv0r/masaje.png",
+      "alt": "therapist",
+      "descripcion":
+        "Especialidad enfocada en la rehabilitación física y el tratamiento de lesiones musculoesqueléticas. Nuestros especialistas trabajan en la recuperación y el fortalecimiento del sistema musculoesquelético para mejorar la movilidad y la calidad de vida."
+    },
+    {
+      "nombre": "Terapia Ocupacional",
+      "img": "https://i.ibb.co/BLdBc1C/to.png",
+      "alt": "TOcupacional",
+      "descripcion":
+        "Servicio dedicado a ayudar a las personas a recuperar habilidades para realizar actividades diarias, ofreciendo terapias personalizadas para mejorar la independencia y la funcionalidad en entornos laborales y cotidianos."
+    },
+    {
+      "nombre": "Nutrición",
+      "img": "https://i.ibb.co/fYhVxK7/nutricion.png",
+      "alt": "Nutricion",
+      "descripcion":
+        "Especialistas en nutrición que ofrecen programas personalizados para promover una alimentación balanceada y saludable, adaptada a las necesidades individuales de cada paciente."
+    },
+    {
+      "nombre": "Psicología",
+      "img": "https://i.ibb.co/cJt9JjS/divan.png",
+      "alt": "Divan",
+      "descripcion":
+        "Profesionales en psicología que brindan apoyo emocional y terapias para ayudar a gestionar problemas mentales y emocionales, fomentando el bienestar mental y la salud emocional."
+    },
+    {
+      "nombre": "Medicina Integral",
+      "img": "https://i.ibb.co/m6Sn9p5/lotus.png",
+      "alt": "Lotus",
+      "descripcion":
+        "Enfoque médico que integra tratamientos y terapias alternativas para abordar la salud holística del paciente, combinando la medicina tradicional con enfoques complementarios para mejorar la calidad de vida."
+    }
+  ]

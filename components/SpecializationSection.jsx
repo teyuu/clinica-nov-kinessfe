@@ -46,16 +46,14 @@ const SpecializationSection = () => {
           </h1>
         </div>
 
-       
         <div className="flex flex-col sm:flex-row flex-wrap items-center xl:justify-between">
           {especialidades.map((e) => (
             <Link
               key={e.alt}
-              className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center "
-              href='/especialidades'
+              className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center"
+              href="/especialidades"
             >
-            
-              <div className="transform hover:scale-110 transition ease-out duration-300 bg-white hover:bg-opacity-90 text-[#619b8a] rounded-lg w-48 h-[12rem] flex items-center justify-center  ">
+              <div className="transform hover:scale-110 transition ease-out duration-300 bg-white text-[#619b8a] rounded-lg w-48 h-[12rem] flex items-center justify-center  ">
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
@@ -68,16 +66,14 @@ const SpecializationSection = () => {
         <div className="flex flex-col justify-center items-center gap-14   py-12">
           <p className="font-extrabold text-5xl text-center ">NUESTRA VISIÓN</p>
           <p className="lg:w-[50%] text-lg text-justify">
-            &quot;En Clínica Kinessfe, nuestro enfoque se basa en la
-            colaboración entre distintas disciplinas para ofrecer una atención
-            integral. Buscamos brindar un cuidado personalizado que promueva la
-            recuperación y el bienestar de quienes nos eligen, mejorando su
-            calidad de vida. Nos dedicamos a proporcionar servicios
-            especializados en diversas áreas de la salud, adaptados a las
-            necesidades individuales de cada paciente. Trabajamos juntos con un
-            objetivo común: asegurar una atención que impulse la recuperación,
-            el bienestar continuo y la mejora constante de la calidad de vida de
-            cada persona.&quot;
+            &quot;En Kinessfe, creemos que la salud debe abordase en equipo. Por
+            eso, contamos con profesionales de distintas especialidades que
+            trabajan de forma coordinada para brindar una atención
+            personalizada. Ofrecemos servicios de calidad en diferentes áreas de
+            la salud, ajustados a las características y necesidades de cada
+            paciente. Nuestro objetivo es brindar una atención que favorezca la
+            recuperación, el bienestar y la calidad de vida de cada
+            persona.&quot;
           </p>
         </div>
       </section>

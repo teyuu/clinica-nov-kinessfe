@@ -55,13 +55,13 @@ const Navbar = () => {
           Av. Aristóbulo del Valle 7289, Santa Fe - Tel: (342) - 6260983
         </p>
         <div className="text-xl space-x-5"><Link
-            href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F3426260983&e=AT3MCUCT-La4QQj-0Wkw6CIeMOYiToBmgoRa0Zi1UZzZw63w5FIdAGP28Kgf1RO4m_0dAKnIx4DxtnMxYumcKmiWLhLkcGZ_U1v2q3yK7-B5EVtE3q0VOCA"
+            href="https://api.whatsapp.com/send/?phone=3426260983&text&type=phone_number&app_absent=0"
             target="_blank"
           >
             <i className="ri-whatsapp-line"></i>
           </Link>
           <Link
-            href="https://api.whatsapp.com/send/?phone=3426260983&text&type=phone_number&app_absent=0"
+            href="https://www.instagram.com/clinicakinessfe_/?hl=es-la"
             target="_blank"
           >
             <i className="ri-instagram-line"></i>
