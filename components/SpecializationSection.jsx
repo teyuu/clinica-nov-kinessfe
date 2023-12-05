@@ -41,7 +41,7 @@ const SpecializationSection = () => {
     <div className="h-auto w-full">
       <section className="text-white bg-[#619b8a] h-fit space-y-5  px-16 py-10">
         <div className="p-5 ">
-          <h1 className="text-2xl lg:text-4xl text-center xl:text-start border-b-4 ">
+          <h1 className="text-2xl lg:text-4xl text-center  border-b-4 ">
             ESPECIALIDADES
           </h1>
         </div>
@@ -57,8 +57,12 @@ const SpecializationSection = () => {
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
+              
             </Link>
           ))}
+        </div>
+        <div className="flex justify-center">
+           <button className="bg-white rounded text-black p-5">Ver más</button>
         </div>
       </section>
 

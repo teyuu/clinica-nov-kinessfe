@@ -11,7 +11,7 @@ const SocialMedia = () => {
           },
           {
             icon: "ri-mail-line",
-            label: "Email",
+            label: "Correo",
             text: "Kinessfearistobulo@gmail.com",
             link:'mailto:kinessfearistobulo@gmail.com'
           },

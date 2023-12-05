@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['i.ibb.co'], // Agrega el dominio de tu imagen aquí
+        remotePatterns: [{
+            hostname:'i.ibb.co'
+        }], // Agrega el dominio de tu imagen aquí
     },
 }
 

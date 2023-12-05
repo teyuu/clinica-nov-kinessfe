@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4">
           <p className="font-medium">Dirección: {clinicDetails.address}</p>
-          <p className="font-medium">Email: {clinicDetails.email}</p>
+          <p className="font-medium">Correo: {clinicDetails.email}</p>
         </div>
       </div>
       <div className="container mx-auto flex xl:justify-center px-5 xl:px-0 text-gray-700 ">

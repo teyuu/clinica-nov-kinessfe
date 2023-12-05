@@ -7,12 +7,14 @@ import SocialMedia from "@/components/SocialMedia"
 
 
 
+
 export default function Home() {
 
  
   
   return (
     <main className="h-auto min-w-[360px] font-Roboto ">
+
     <HeroSection/>  
       <SpecializationSection/>
       <SocialMedia/>

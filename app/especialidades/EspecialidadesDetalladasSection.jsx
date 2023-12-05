@@ -9,7 +9,7 @@ const EspecialidadesDetalladasSection = () => {
       <div className="container mx-auto px-8 md:px-16 lg:px-32">
       <div className="p-5 ">
           <h1 className="font-PlayfairDisplay font-medium text-2xl lg:text-4xl text-center  border-b-4 ">
-            ESPECIALIDADES
+            ESPECIALIDADES Y TRATAMIENTOS
           </h1>
           </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">

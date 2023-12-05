@@ -17,7 +17,11 @@ const QuienesSomosSection = () => {
             />
           </div>
           <div>
-            <h2 className="text-4xl font-medium mb-4 uppercase">Quiénes Somos</h2>
+          <div className="p-5 ">
+          <h1 className="font-PlayfairDisplay font-medium text-2xl lg:text-4xl text-center  border-b-4 ">
+            QUIENES SOMOS
+          </h1>
+          </div>
             <p className="text-lg mb-6">
               Somos una clínica comprometida con la salud y el bienestar integral. Nuestra misión es proporcionar atención médica de calidad, enfocada en el paciente y centrada en brindar soluciones efectivas para mejorar su calidad de vida.
             </p>
