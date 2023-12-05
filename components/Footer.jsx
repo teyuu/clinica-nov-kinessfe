@@ -6,7 +6,7 @@ const Footer = () => {
   const clinicDetails = {
     name: "CLINICA KINESSFE",
     hoursOfOperation: [
-      "Lunes a viernes de 8 a 20 hs.",
+      "Lunes a viernes: 8 a 20 hs.",
     ],
     phone: "(342) - 6260983",
     address: "Av. Aristóbulo del Valle 7289, Santa Fe",
@@ -26,17 +26,20 @@ const Footer = () => {
           </h1>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="font-medium">Horarios de atención:</p>
+          <p className="text-xl font-medium uppercase">Horarios de atención</p>
           {clinicDetails.hoursOfOperation.map((hours, index) => (
             <p key={index}>{hours}</p>
           ))}
         </div>
         <div className="flex flex-col gap-4">
-          <p className="font-medium">Teléfono: {clinicDetails.phone}</p>
+          <p className="text-xl font-medium uppercase">Teléfono</p>
+          <p >{clinicDetails.phone}</p>
+          <p >(342) - 4736803</p>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="font-medium">Dirección: {clinicDetails.address}</p>
-          <p className="font-medium">Correo: {clinicDetails.email}</p>
+          <p className="text-xl font-medium">DIRECCIÓN</p>
+          <p >{clinicDetails.address}</p>
+          <p >Av Blas Parera 8314</p>
         </div>
       </div>
       <div className="container mx-auto flex xl:justify-center px-5 xl:px-0 text-gray-700 ">

@@ -53,7 +53,7 @@ const SpecializationSection = () => {
               className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center"
               href="/especialidades"
             >
-              <div className="transform hover:scale-110 transition ease-out duration-300 bg-white text-[#619b8a] rounded-lg w-48 h-[12rem] flex items-center justify-center  ">
+              <div className="transform hover:scale-110 transition ease-out duration-300 hover:bg-opacity-90 0 bg-white text-[#619b8a] rounded-lg w-48 h-[12rem] flex items-center justify-center  ">
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
@@ -62,7 +62,7 @@ const SpecializationSection = () => {
           ))}
         </div>
         <div className="flex justify-center">
-           <button className="bg-white rounded text-black p-5">Ver más</button>
+          <Link href={'/especialidades'}><button className="bg-white rounded text-black p-5 hover:bg-opacity-90 transition duration-300">Ver más</button></Link> 
         </div>
       </section>
 

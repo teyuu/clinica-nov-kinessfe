@@ -16,8 +16,8 @@ const QuienesSomosSection = () => {
               height={400}
             />
           </div>
-          <div>
-          <div className="p-5 ">
+          <div className="text-justify tracking-tighter">
+          <div className="p-5">
           <h1 className="font-PlayfairDisplay font-medium text-2xl lg:text-4xl text-center  border-b-4 ">
             QUIENES SOMOS
           </h1>

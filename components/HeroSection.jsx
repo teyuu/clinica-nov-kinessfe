@@ -20,7 +20,7 @@ const HeroSection = () => {
   return (
     <div
       style={{ backgroundImage: `url(/landing.jpg)` }}
-      className={`bg-cover bg-center h-[750px] lg:h-screen w-full text-white relative overflow-hidden`}
+      className={`bg-cover bg-center h-[750px] lg:h-screen w-full text-white  overflow-hidden`}
     >
       <div className="h-full flex flex-col justify-evenly items-center font-PlayfairDisplay">
         <div className="flex flex-col w-[90%] justify-center text-center gap-5">
