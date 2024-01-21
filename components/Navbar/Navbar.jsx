@@ -3,10 +3,11 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../assets/logo1.png";
+
 import NavItem from "./NavItem";
 import UpperNavbar from "./UpperNavbar";
 import MobileMenu from "./MobileMenu";
+import { bgGreen } from "@/data/tailwindClasses";
 
 const Navbar = () => {
   const navItems = [
@@ -43,17 +44,16 @@ const Navbar = () => {
 
   return (
     <>
-      <UpperNavbar />
+      
 
       <nav
-        className={`min-w-[360px] font-PlayfairDisplay flex justify-between items-center h-24 mx-auto px-4 text-white bg-[#619b8a] w-full z-10 transition duration-300 ${
-          scrolled ? "border-b border-white" : "border-b-0 border-transparent"
-        }`}
+        className={`bg-[#649d8d] min-w-[360px] latoFont flex justify-between items-center h-24 mx-auto px-4 text-white  w-full z-10 transition duration-300`}
+        
       >
         <Link href="/">
           <div className="flex items-center gap-2">
-            <Image src={logo} width={60} alt="logo" className="border" />
-            <h1 className="hidden md:block w-auto text-3xl font-bold text-white  cursor-pointer">
+            <Image src="/logo1.jpeg" width={70} height={60} alt="logo" priority quality={100} />
+            <h1 className="hidden md:block w-auto text-3xl font-bold text-white  cursor-pointer font-Lato ">
               CLINICA KINESSFE
             </h1>
           </div>
@@ -67,8 +67,8 @@ const Navbar = () => {
             href="https://api.whatsapp.com/send/?phone=3426260983&text&type=phone_number&app_absent=0"
             target="_blank"
           >
-            <button className="btn rounded-xl border py-4 px-8 hover:bg-white hover:text-black transition-color duration-200">
-              PEDI TU TURNO
+            <button className="bg-[#31544c] uppercase font-bold bg-opacity-80 rounded-xl px-4 py-3 ">
+              PEDí TU TURNO
             </button>
           </Link>
         </ul>

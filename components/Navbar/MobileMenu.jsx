@@ -1,6 +1,7 @@
 import React from 'react'
 import NavItem from './NavItem'
 
+
 const MobileMenu = ({ nav, handleNav, navItems }) => {
 
   return (
@@ -11,6 +12,7 @@ const MobileMenu = ({ nav, handleNav, navItems }) => {
     {navItems.map((item) => (
       <NavItem key={item.itemName} {...item} />
     ))}
+
   </ul>
   )
 }

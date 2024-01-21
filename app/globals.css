@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@300&display=swap');
+
+
 
 @tailwind base;
 @tailwind components;
@@ -8,3 +9,14 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.bg-mix {
+  background: linear-gradient(185deg, hsl(161, 26%, 64%), #39685c);
+    /* Ajusta los valores de color (RGB) y opacidad (0.0 a 1.0) según tus necesidades */
+    /* Puedes ajustar también la dirección del gradiente ('to right') y otros parámetros */
+  }
+  
+  .shadow-custom {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* Agrega más propiedades según tus necesidades */
+  }

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import LogoImage from "../assets/logo1.png";
+
+import { bgGreen } from "@/data/tailwindClasses";
 
 const Footer = () => {
   const clinicDetails = {
@@ -15,11 +16,11 @@ const Footer = () => {
 
   return (
     <>
-    <div className="xl:h-72 min-w-[360px] flex flex-col justify-center items-center gap-3 text-white bg-[#619b8a]">
+    <div className={`xl:h-72 min-w-[360px] flex flex-col justify-center items-center gap-3 text-white ${bgGreen}`}>
       <div className="container mx-auto py-8 px-5 flex flex-col xl:flex-row justify-center gap-8">
         <div className="flex items-center gap-4">
-          <div className="h-16 w-16 border">
-            <Image src={LogoImage} width={64} height={64} alt="Logo" />
+          <div className="h-16 w-16 ">
+            <Image src='/logo1.jpeg' width={70} height={60} alt="Logo" />
           </div>
           <h1 className="font-PlayfairDisplay text-xl font-bold cursor-pointer">
             {clinicDetails.name}

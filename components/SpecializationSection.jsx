@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import therapist from "../assets/masaje.png";
+import therapist from "../assets/masaje2.png";
 import TOcupacional from "../assets/to.png";
 import Divan from "../assets/divan.png";
 import Nutrition from "../assets/nutricion.png";
 import Lotus from "../assets/lotus.png";
 import Link from "next/link";
-// import ConsultorioImg from "../assets/logo3.png";
+import { bgGreen, bgYellow } from "@/data/tailwindClasses";
 
 const especialidades = [
   {
@@ -38,8 +38,8 @@ const especialidades = [
 
 const SpecializationSection = () => {
   return (
-    <div className="h-auto w-full">
-      <section className="text-white bg-[#619b8a] h-fit space-y-5  px-16 py-10">
+    <div id="specializationSection" className={`${bgGreen} h-auto w-full`}>
+      <section className="text-white h-fit space-y-5  px-16 py-10">
         <div className="p-5 ">
           <h1 className="text-2xl lg:text-4xl text-center  border-b-4 ">
             ESPECIALIDADES
@@ -53,16 +53,21 @@ const SpecializationSection = () => {
               className="text-center p-5 space-y-8  w-fit sm:w-[50%] xl:w-fit flex flex-col items-center"
               href="/especialidades"
             >
-              <div className="transform hover:scale-110 transition ease-out duration-300 hover:bg-opacity-90 0 bg-white text-[#619b8a] rounded-lg w-48 h-[12rem] flex items-center justify-center  ">
+              <div
+                className={`transform hover:scale-110 transition ease-out duration-300 hover:bg-opacity-90  bg-[#f4f9f7] rounded-lg w-48 h-[12rem] flex items-center justify-center`}
+              >
                 <Image src={e.img} width={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
-              
             </Link>
           ))}
         </div>
         <div className="flex justify-center">
-          <Link href={'/especialidades'}><button className="bg-white rounded text-black p-5 hover:bg-opacity-90 transition duration-300">Ver más</button></Link> 
+          <Link href={"/especialidades"}>
+            <button className="bg-[#31544c] rounded  p-5 hover:bg-opacity-60 transition duration-300">
+              Ver más
+            </button>
+          </Link>
         </div>
       </section>
 

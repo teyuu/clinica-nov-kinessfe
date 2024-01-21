@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
+import { bgGreen } from "@/data/tailwindClasses";
 const SocialMedia = () => {
   const contactDetails = [
     {
@@ -18,7 +18,7 @@ const SocialMedia = () => {
   ];
 
   return (
-    <div className="bg-[#619b8a] text-white">
+    <div className={`${bgGreen} text-white`}>
       <div className="container  mx-auto py-5 ">
         {/* Title */}
         <div className="p-5 ">
