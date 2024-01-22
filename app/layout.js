@@ -12,7 +12,7 @@ export const metadata = {
   title: 'Clinica Kinessfe',
   description: 'Clinica de rehabitación - Kinesiología y fisiatría, Nutrición, Terapia Ocupacional, Psicología - Santa Fe, Capital ',
   icons: {
-    icon: '/logo.png', // /public path
+    icon: '/logo1.jpeg', // /public path
   },
 }
 
