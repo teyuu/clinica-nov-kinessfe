@@ -1,40 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import therapist from "../assets/masaje2.png";
-import TOcupacional from "../assets/to.png";
-import Divan from "../assets/divan.png";
-import Nutrition from "../assets/nutricion.png";
-import Lotus from "../assets/lotus.png";
 import Link from "next/link";
 import { bgGreen, bgYellow } from "@/data/tailwindClasses";
-
-const especialidades = [
-  {
-    nombre: "Kinesiología y Fisiatría",
-    img: therapist,
-    alt: "therapist",
-  },
-  {
-    nombre: "Terapia ocupacional",
-    img: TOcupacional,
-    alt: "TOcupacional",
-  },
-  {
-    nombre: "Psicología",
-    img: Divan,
-    alt: "Divan",
-  },
-  {
-    nombre: "Nutrición",
-    img: Nutrition,
-    alt: "Nutrition",
-  },
-  {
-    nombre: "Medicina Integral",
-    img: Lotus,
-    alt: "Lotus",
-  },
-];
+import especialidades from '../data/especialidades.json'
 
 const SpecializationSection = () => {
   return (
@@ -56,7 +24,7 @@ const SpecializationSection = () => {
               <div
                 className={`transform hover:scale-110 transition ease-out duration-300 hover:bg-opacity-90  bg-[#f4f9f7] rounded-lg w-48 h-[12rem] flex items-center justify-center`}
               >
-                <Image src={e.img} width={100} alt={e.nombre} />
+                <Image src={e.img} width={100} height={100} alt={e.nombre} />
               </div>
               <p className="text-lg border-b w-48">{e.nombre}</p>
             </Link>

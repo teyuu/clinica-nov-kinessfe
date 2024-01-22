@@ -15,11 +15,11 @@ const EspecialidadCard = ({ especialidad }) => {
           height={120}
         />
       </div>
-      <h3 className="text-xl w-full text-center font-semibold mb-2  text-white">
+      <h3 className="text-2xl w-full text-center font-semibold mb-2  text-white">
         {especialidad.nombre}
       </h3>
       {especialidad.tratamientos && (
-        <ul className="text-white  w-[65%] tracking-tighter space-y-5 ">
+        <ul className="text-white text-xl w-[65%] tracking-tighter space-y-5 ">
           {especialidad.tratamientos.map((tratamiento, index) => (
             <li className=" list-disc text-center w-full" key={index}>{tratamiento}</li>
           ))}

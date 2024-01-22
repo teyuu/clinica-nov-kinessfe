@@ -26,24 +26,24 @@ const Footer = () => {
             {clinicDetails.name}
           </h1>
         </div>
-        <div className="flex flex-col gap-4">
-          <p className="text-xl font-medium uppercase">Horarios de atención</p>
+        <div className="flex flex-col gap-4 text-lg">
+          <p className="font-semibold uppercase">Horarios de atención</p>
           {clinicDetails.hoursOfOperation.map((hours, index) => (
             <p key={index}>{hours}</p>
           ))}
         </div>
-        <div className="flex flex-col gap-4">
-          <p className="text-xl font-medium uppercase">Teléfono</p>
+        <div className="flex flex-col gap-4 text-lg">
+          <p className=" font-semibold uppercase">Teléfono</p>
           <p >{clinicDetails.phone}</p>
           <p >(342) - 4736803</p>
         </div>
-        <div className="flex flex-col gap-4">
-          <p className="text-xl font-medium">DIRECCIÓN</p>
+        <div className="flex flex-col gap-4 text-lg ">
+          <p className="font-semibold">DIRECCIÓN</p>
           <p >{clinicDetails.address}</p>
           <p >Av Blas Parera 8314</p>
         </div>
       </div>
-      <div className="container mx-auto flex xl:justify-center px-5 xl:px-0 text-gray-700 ">
+      <div className="container mx-auto flex xl:justify-center px-5 xl:px-0 text-slate-100 ">
       <i className="ri-copyright-line"></i>
       <p > 2023 KINESSFE. ALL RIGHTS RESERVED</p>
     </div>
