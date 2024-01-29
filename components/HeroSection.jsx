@@ -7,11 +7,6 @@ import { bgGreen } from "@/data/tailwindClasses";
 import Image from "next/image";
 
 const HeroSection = () => {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
 
   const heroTextStyle = {
     title:
@@ -40,9 +35,7 @@ const HeroSection = () => {
            <span className="">medicina integral</span> 
           </div>
           <h2
-            className={`${heroTextStyle.subtitle} ${
-              loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`${heroTextStyle.subtitle}`}
             >
             Cuidado integral para una vida plena: Recupera tu<br/>vitalidad física,
             emocional y mental
