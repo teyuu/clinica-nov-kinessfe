@@ -17,9 +17,8 @@ export default function Home() {
     <HeroSection/>  
       <SpecializationSection/>
       <SocialMedia/>
-      <InstagramFeed/>
-    <Contact/>
       <Map/>
+    <Contact/>
     </main>
   );
 }
